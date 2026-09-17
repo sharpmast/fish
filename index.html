@@ -1,0 +1,1197 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" href="./assets/img/favico.svg">
+		<title>Рибальство та туризм</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1789626935067"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1789626935067">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header-scroll="" data-fls-header-scroll-show="" class="header">
+				<div class="header__top">
+					<div data-fls-dynamic=".menu,870,last" class="header__top-container">
+						<div class="header__top-items">
+							<div class="header__top-item">
+								<span class="--icon-delivery"></span>
+								<span>Безкоштовна доставка</span>
+							</div>
+							<div class="header__top-item">
+								<span class="--icon-shield"></span>
+								<span>Гарантія якості</span>
+							</div>
+							<div class="header__top-item">
+								<span class="--icon-change"></span>
+								<span>Повернення 14 днів</span>
+							</div>
+						</div>
+						<div class="header__top-links">
+							<button class="header__top-btn">
+								<span class="--icon-user"></span>
+								<span>Увійти</span>
+							</button>
+							<a href="tel:+380938765432" class="header__top-link">
+								<div class="header__top-link-icon -icon--icon-phone"></div>
+								<div class="header__top-link-text">
+									<span>(093) 876 54 32</span>
+									<span>Замовити дзвінок</span>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__container">
+					<a href="#" class="header__logo">
+						<div class="header__logo-img __img">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/fish-600.webp" type="image/webp">
+								<source media="(max-width: 1200px)" srcset="./assets/img/fish-1200.webp" type="image/webp">
+								<img alt="Image" src="./assets/img/fish.webp">
+							</picture>
+						</div>
+						<div class="header__logo-text">
+							<div class="header__logo-title">
+								<span>Fish</span>
+								<span>&</span>
+								<span>Trip</span>
+							</div>
+							<div class="header__logo-subtitle">
+								<span>Рибальство</span>
+								<span>та</span>
+								<span>туризм</span>
+							</div>
+						</div>
+					</a>
+					<nav class="header__menu menu">
+						<ul class="header__list menu__list">
+							<li>
+								<a class="menu__link" href="#">Каталог</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Риболовля</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Туризм</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Одяг та взуття</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Аксесуари</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Акції</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#">Блог</a>
+							</li>
+							<li>
+								<a class="menu__link" href="#contacts">Контакти</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__buttons">
+						<div class="header__btn btn--icon">
+							<button data-fls-dynamic=".menu,460,first" class="header__button-search __img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/search-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/search-1200.webp" type="image/webp">
+									<img alt="Image" src="./assets/img/search.webp">
+								</picture>
+							</button>
+						</div>
+						<button class="header__button cart-action --icon-cart">
+							<span data-fls-addtocart="" class="cart-counter"></span>
+						</button>
+					</div>
+				</div>
+				<div class="menu__icon">
+					<span></span>
+				</div>
+			</header>
+			<div class="cart">
+				<div class="cart__overlay cart-action"></div>
+				<div class="cart__body">
+					<div class="cart__top">
+						<div class="cart__title">Кошик</div>
+						<button class="cart__btn cart-action"></button>
+					</div>
+					<div class="cart__items">
+						<span class="cart__void">Корзина порожня</span>
+						<template id="cart-item-template">
+							<div class="cart__item">
+								<div class="cart__item-img __img">
+									<img src="" alt="">
+								</div>
+								<div class="cart__item-text">
+									<div class="cart__item-title"></div>
+									<div class="cart__item-price">
+										<span data-fls-cart-price=""></span>
+										<span>грн.</span>
+									</div>
+								</div>
+								<div class="cart__item-buttons">
+									<div data-fls-quantity="" class="cart__quantity">
+										<button data-fls-quantity-minus="" type="button" class="cart__quantity-btn"></button>
+										<div class="cart__quantity-input">
+											<input data-fls-addtocart-quantity="" data-fls-quantity-value="" autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-fls-quantity-plus="" type="button" class="cart__quantity-btn cart__quantity-btn--plus"></button>
+									</div>
+									<button type="button" class="cart__remove">×</button>
+								</div>
+							</div>
+						</template>
+					</div>
+					<div class="cart__footer">
+						<div class="cart__total">
+							<span>Разом</span>
+							<span data-fls-cart-total="">0</span>
+							<span>грн.</span>
+						</div>
+						<div class="cart__button">
+							<button class="cart__action-btn btn--yellow">Оформити замовлення</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<main class="page-home">
+				<section class="hero">
+					<div class="hero__bg __img">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/hero-bg-600.webp" type="image/webp">
+							<source media="(max-width: 1200px)" srcset="./assets/img/hero-bg-1200.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/hero-bg.webp">
+						</picture>
+					</div>
+					<div class="hero__container">
+						<div class="hero__text">
+							<h1 class="hero__title">
+								<span>Відпочивай.</span>
+								<span>На природі.</span>
+								<span>Лови момент!</span>
+							</h1>
+							<div class="hero__subtitle">Все для рибальства, туризму та активного відпочинку</div>
+							<div class="hero__buttons">
+								<button class="hero__btn btn--yellow">перейти в каталог</button>
+								<button class="hero__btn">Дивитися акції</button>
+							</div>
+						</div>
+						<div class="hero__image">
+							<div class="hero__img">
+								<img src="./assets/img/fishman.jfif" alt="Image" loading="lazy">
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="delivery">
+					<div class="delivery__container">
+						<div class="delivery__item">
+							<div class="delivery__item-ico">
+								<span class="--icon-truck"></span>
+							</div>
+							<div class="delivery__item-text">
+								<div class="delivery__item-title">Швидка доставка</div>
+								<div class="delivery__item-subtitle">1-2 дні по Україні</div>
+							</div>
+						</div>
+						<div class="delivery__item">
+							<div class="delivery__item-ico">
+								<span class="--icon-quality"></span>
+							</div>
+							<div class="delivery__item-text">
+								<div class="delivery__item-title">Гарантія якості</div>
+								<div class="delivery__item-subtitle">Оригінальна продукція</div>
+							</div>
+						</div>
+						<div class="delivery__item">
+							<div class="delivery__item-ico">
+								<span class="--icon-back"></span>
+							</div>
+							<div class="delivery__item-text">
+								<div class="delivery__item-title">Легке повернення</div>
+								<div class="delivery__item-subtitle">14 днів на обмін</div>
+							</div>
+						</div>
+						<div class="delivery__item">
+							<div class="delivery__item-ico">
+								<span class="--icon-consultation"></span>
+							</div>
+							<div class="delivery__item-text">
+								<div class="delivery__item-title">Професійна консультація</div>
+								<div class="delivery__item-subtitle">Допоможемо з вибором</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="category">
+					<div class="category__container">
+						<div class="category__top">
+							<h2 class="category__title">Категорії</h2>
+							<a href="#" class="category__top-link">
+								<span>Дивитися всі категорії</span>
+								<span class="--icon-arrow"></span>
+							</a>
+						</div>
+						<div data-fls-watcher="" class="category__cards">
+							<a href="#" class="category__card">
+								<div class="category__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/cat1-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/cat1-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/cat1.webp">
+									</picture>
+								</div>
+								<div data-fls-parallax-parent="" class="category__card-text">
+									<div data-fls-parallax="" class="category__card-title">Риболовля</div>
+									<div data-fls-parallax="" class="category__card-caption">
+										<span data-fls-digcounter="">1250</span>
+										<span>товарів</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="category__card">
+								<div class="category__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/cat2-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/cat2-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/cat2.webp">
+									</picture>
+								</div>
+								<div data-fls-parallax-parent="" class="category__card-text">
+									<div data-fls-parallax="" class="category__card-title">Туризм</div>
+									<div data-fls-parallax="" class="category__card-caption">
+										<span data-fls-digcounter="">980</span>
+										<span>товарів</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="category__card">
+								<div class="category__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/cat3-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/cat3-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/cat3.webp">
+									</picture>
+								</div>
+								<div data-fls-parallax-parent="" class="category__card-text">
+									<div data-fls-parallax="" class="category__card-title">Рюкзаки та сумки</div>
+									<div data-fls-parallax="" class="category__card-caption">
+										<span data-fls-digcounter="">560</span>
+										<span>товарів</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="category__card">
+								<div class="category__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/cat4-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/cat4-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/cat4.webp">
+									</picture>
+								</div>
+								<div data-fls-parallax-parent="" class="category__card-text">
+									<div data-fls-parallax="" class="category__card-title">Одяг та взуття</div>
+									<div data-fls-parallax="" class="category__card-caption">
+										<span data-fls-digcounter="">780</span>
+										<span>товарів</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="category__card">
+								<div class="category__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/cat5-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/cat5-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/cat5.webp">
+									</picture>
+								</div>
+								<div data-fls-parallax-parent="" class="category__card-text">
+									<div data-fls-parallax="" class="category__card-title">Аксусуари</div>
+									<div data-fls-parallax="" class="category__card-caption">
+										<span data-fls-digcounter="">420</span>
+										<span>товарів</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="category__card">
+								<div class="category__card-img __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/cat6-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/cat6-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/cat6.webp">
+									</picture>
+								</div>
+								<div data-fls-parallax-parent="" class="category__card-text">
+									<div data-fls-parallax="" class="category__card-title">Подарунки</div>
+									<div data-fls-parallax="" class="category__card-caption">сертифікати</div>
+								</div>
+							</a>
+						</div>
+						<div class="category__items">
+							<div class="category__item">
+								<div class="category__item-img-bg __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/tourist3-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/tourist3-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/tourist3.webp">
+									</picture>
+								</div>
+								<div class="category__item-label">Знижки до</div>
+								<div class="category__item-price">-30%</div>
+								<div class="category__item-caption">На обрані товари</div>
+								<div class="category__item-button">
+									<button class="category__item-btn btn--yellow">До акції</button>
+								</div>
+							</div>
+							<div class="category__item">
+								<div class="category__item-img-bg __img">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/tourist2-600.webp" type="image/webp">
+										<source media="(max-width: 1200px)" srcset="./assets/img/tourist2-1200.webp" type="image/webp">
+										<img alt="Image" src="./assets/img/tourist2.webp">
+									</picture>
+								</div>
+								<div class="category__item-title">Готовий до нових пригод?</div>
+								<div class="category__item-caption">Спорядження яке не підведе</div>
+								<div class="category__item-button">
+									<button class="category__item-btn btn--green">Підібрати спорядження</button>
+								</div>
+							</div>
+							<div class="category__item-cards">
+								<div class="category__item-card-top">
+									<div class="category__item-card-icon">
+										<span class="--icon-delivery"></span>
+									</div>
+									<div class="category__item-card-text">
+										<div class="category__item-card-top-title">Безкоштовна доставка</div>
+										<div class="category__item-card-top-subtitle">при замовленні від 2000 грн.</div>
+									</div>
+								</div>
+								<div class="category__item-card">
+									<div class="category__item-img-bg __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/tourist1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/tourist1-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/tourist1.webp">
+										</picture>
+									</div>
+									<div class="category__item-card-title">Експерти на зв'язку</div>
+									<div class="category__item-caption">Отримайте консультацію та підбір спозядження</div>
+									<div class="category__item-button">
+										<button class="category__item-btn btn--green">Задати питання</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="heets">
+					<div class="heets__container">
+						<div class="category__top">
+							<h2 class="category__title">Хіти продажів</h2>
+							<a href="#" class="category__top-link">
+								<span>Всі товари</span>
+								<span class="--icon-arrow"></span>
+							</a>
+						</div>
+						<div data-fls-slider="" class="heets__slider swiper">
+							<div data-fls-watcher="" class="heets__cards swiper-wrapper">
+								<div data-fls-addtocart-product="" class="heets__card swiper-slide">
+									<div class="heets__card-image">
+										<div class="heets__card-label heets__card-label--yellow">хіт</div>
+										<div class="heets__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/card1-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/card1-1200.webp" type="image/webp">
+												<img image="" alt="Image" src="./assets/img/card1.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="heets__card-title">Котушка Shimano</div>
+									<div class="heets__card-caption">Nexave 2500</div>
+									<div class="heets__card-raiting">
+										<div class="heets__card-stars">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<div class="heets__card-stars-value">
+											<span>4.8</span>
+											<span>(126)</span>
+										</div>
+									</div>
+									<div class="heets__card-price">
+										<div class="heets__card-price-title">
+											<span data-fls-digcounter="">2450</span>
+											<span>грн.</span>
+										</div>
+										<div class="heets__card-price-button">
+											<button data-fls-addtocart-button="" data-id="1" data-title="Котушка Shimano" data-price="2450" data-image="assets/img/card1.webp" class="heets__card-btn btn--green">
+												<span class="--icon-cart"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" class="heets__card swiper-slide">
+									<div class="heets__card-image">
+										<div class="heets__card-label heets__card-label--green">новинка</div>
+										<div class="heets__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/card2-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/card2-1200.webp" type="image/webp">
+												<img image="" alt="Image" src="./assets/img/card2.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="heets__card-title">Удилище Favorite</div>
+									<div class="heets__card-caption">X1 2.7m 10-30g</div>
+									<div class="heets__card-raiting">
+										<div class="heets__card-stars">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<div class="heets__card-stars-value">
+											<span>4.9</span>
+											<span>(64)</span>
+										</div>
+									</div>
+									<div class="heets__card-price">
+										<div class="heets__card-price-title">
+											<span data-fls-digcounter="">1890</span>
+											<span>грн.</span>
+										</div>
+										<div class="heets__card-price-button">
+											<button data-fls-addtocart-button="" data-id="2" data-title="Удилище Favorite" data-price="1890" data-image="assets/img/card2.webp" class="heets__card-btn btn--green">
+												<span class="--icon-cart"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" class="heets__card swiper-slide">
+									<div class="heets__card-image">
+										<div class="heets__card-label heets__card-label--yellow">хіт</div>
+										<div class="heets__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/card3-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/card3-1200.webp" type="image/webp">
+												<img image="" alt="Image" src="./assets/img/card3.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="heets__card-title">Намет Tramp</div>
+									<div class="heets__card-caption">Lite Camp 2</div>
+									<div class="heets__card-raiting">
+										<div class="heets__card-stars">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<div class="heets__card-stars-value">
+											<span>4.7</span>
+											<span>(58)</span>
+										</div>
+									</div>
+									<div class="heets__card-price">
+										<div class="heets__card-price-title">
+											<span data-fls-digcounter="">3950</span>
+											<span>грн.</span>
+										</div>
+										<div class="heets__card-price-button">
+											<button data-fls-addtocart-button="" data-id="3" data-title="Намет Tramp" data-price="2450" data-image="assets/img/card3.webp" class="heets__card-btn btn--green">
+												<span class="--icon-cart"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" class="heets__card swiper-slide">
+									<div class="heets__card-image">
+										<div class="heets__card-label heets__card-label--green">новинка</div>
+										<div class="heets__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/card4-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/card4-1200.webp" type="image/webp">
+												<img image="" alt="Image" src="./assets/img/card4.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="heets__card-title">Рюкзак Deuter</div>
+									<div class="heets__card-caption">futura24</div>
+									<div class="heets__card-raiting">
+										<div class="heets__card-stars">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<div class="heets__card-stars-value">
+											<span>4.8</span>
+											<span>(73)</span>
+										</div>
+									</div>
+									<div class="heets__card-price">
+										<div class="heets__card-price-title">
+											<span data-fls-digcounter="">2250</span>
+											<span>грн.</span>
+										</div>
+										<div class="heets__card-price-button">
+											<button data-fls-addtocart-button="" data-id="4" data-title="Рюкзак Deuter" data-price="2250" data-image="assets/img/card3.webp" class="heets__card-btn btn--green">
+												<span class="--icon-cart"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" class="heets__card swiper-slide">
+									<div class="heets__card-image">
+										<div class="heets__card-label heets__card-label--yellow">хіт</div>
+										<div class="heets__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/card5-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/card5-1200.webp" type="image/webp">
+												<img image="" alt="Image" src="./assets/img/card5.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="heets__card-title">Воблер ZipBaits</div>
+									<div class="heets__card-caption">Rigge S6f</div>
+									<div class="heets__card-raiting">
+										<div class="heets__card-stars">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<div class="heets__card-stars-value">
+											<span>4.6</span>
+											<span>(33)</span>
+										</div>
+									</div>
+									<div class="heets__card-price">
+										<div class="heets__card-price-title">
+											<span data-fls-digcounter="">320</span>
+											<span>грн.</span>
+										</div>
+										<div class="heets__card-price-button">
+											<button data-fls-addtocart-button="" data-id="5" data-title="Воблер Zipbaits" data-price="320" data-image="assets/img/card5.webp" class="heets__card-btn btn--green">
+												<span class="--icon-cart"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+								<div data-fls-addtocart-product="" class="heets__card swiper-slide">
+									<div class="heets__card-image">
+										<div class="heets__card-label heets__card-label--green">новинка</div>
+										<div class="heets__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/card6-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/card6-1200.webp" type="image/webp">
+												<img image="" alt="Image" src="./assets/img/card6.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="heets__card-title">Ліхтар Налобний</div>
+									<div class="heets__card-caption">Fenix HMSQR</div>
+									<div class="heets__card-raiting">
+										<div class="heets__card-stars">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<div class="heets__card-stars-value">
+											<span>4.9</span>
+											<span>(61)</span>
+										</div>
+									</div>
+									<div class="heets__card-price">
+										<div class="heets__card-price-title">
+											<span data-fls-digcounter="">1650</span>
+											<span>грн.</span>
+										</div>
+										<div class="heets__card-price-button">
+											<button data-fls-addtocart-button="" data-id="6" data-title="Ліхтар Fenix" data-price="1650" data-image="assets/img/card6.webp" class="heets__card-btn btn--green">
+												<span class="--icon-cart"></span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="heets__slider-arrow heets__slider-arrow-prev">
+								<span class="--icon-prev"></span>
+							</div>
+							<div class="heets__slider-arrow heets__slider-arrow-next">
+								<span class="--icon-next"></span>
+							</div>
+							<div class="heets__slider-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="choose">
+					<div class="choose__container">
+						<h2 class="category__title choose__title">Чому клієнти обирають нас</h2>
+						<div class="choose__items">
+							<div class="choose__item">
+								<div class="choose__item-icon">
+									<span class="--icon-prize"></span>
+								</div>
+								<div class="choose__item-title">Більще 10 років досвіду</div>
+							</div>
+							<div class="choose__item">
+								<div class="choose__item-icon">
+									<span class="--icon-shoe"></span>
+								</div>
+								<div class="choose__item-title">Тільки перевірені товари</div>
+							</div>
+							<div class="choose__item">
+								<div class="choose__item-icon">
+									<span class="--icon-best-price"></span>
+								</div>
+								<div class="choose__item-title">Вигідні ціни та акції</div>
+							</div>
+							<div class="choose__item">
+								<div class="choose__item-icon">
+									<span class="--icon-best-change"></span>
+								</div>
+								<div class="choose__item-title">Повернення без проблем</div>
+							</div>
+							<div class="choose__item">
+								<div class="choose__item-icon">
+									<span class="--icon-consultation"></span>
+								</div>
+								<div class="choose__item-title">Підтримка 24/7</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="useful">
+					<div class="useful__container">
+						<div class="category__top">
+							<h2 class="category__title useful__title">Корисне для вас</h2>
+							<a href="#" class="category__top-link">
+								<span>Всі статті</span>
+								<span class="--icon-arrow"></span>
+							</a>
+						</div>
+						<div class="useful__items">
+							<div class="useful__item">
+								<div class="useful__item-image">
+									<div class="useful__item-label">
+										<a href="" class="btn--green">поради</a>
+									</div>
+									<div class="useful__item-img __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/use1-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/use1-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/use1.webp">
+										</picture>
+									</div>
+								</div>
+								<div class="useful__item-text">
+									<div class="useful__item-date">20.05.2026</div>
+									<div class="useful__item-title">Як вибрати спіннінг для початківця</div>
+									<div data-fls-showmore="" class="useful__item-more">
+										<div data-fls-showmore-content="0" class="useful__item-more">
+											<p>
+												1. Довжина
+                                    Для універсального спінінга підійде довжина 2,1–2,4 м. Він зручний для більшості
+                                    умов
+                                    риболовлі.
+											</p>
+											<p>
+												2. Тест спінінга
+                                    Початківцю краще вибрати універсальний тест, наприклад 5–25 г або близький до нього.
+                                    Це
+                                    дозволить використовувати різні приманки.
+											</p>
+											<p>
+												3. Стрій
+                                    Для початку хорошим вибором буде швидкий (Fast) або середньо-швидкий (Moderate Fast)
+                                    стрій.
+											</p>
+											<p>
+												4. Матеріал
+                                    Краще звернути увагу на карбон або композит. Карбонові вудилища легші та чутливіші.
+											</p>
+											<p>
+												5. Тип риболовлі
+                                    Вибір також залежить від того, де ви плануєте ловити: на річці, озері чи з берега.
+											</p>
+											<p>
+												Коротка порада: для першого спінінга варто обирати універсальну модель, яка підійде
+                                    для
+                                    різних умов і допоможе зрозуміти, який стиль риболовлі вам подобається найбільше.
+											</p>
+										</div>
+										<button hidden data-fls-showmore-button="" type="button" class="useful__item-more-btn">
+											<span class="--icon-arrow">Читати далі</span>
+											<span>Сховати</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="useful__item">
+								<div class="useful__item-image">
+									<div class="useful__item-label">
+										<a href="" class="btn--green">туризм</a>
+									</div>
+									<div class="useful__item-img __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/use2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/use2-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/use2.webp">
+										</picture>
+									</div>
+								</div>
+								<div class="useful__item-text">
+									<div class="useful__item-date">17.07.2026</div>
+									<div class="useful__item-title">5 речей які мають бути в кожному поході</div>
+									<div data-fls-showmore="" class="useful__item-more">
+										<div data-fls-showmore-content="0" class="useful__item-more">
+											<p>Рюкзак — зручний і відповідного об'єму.</p>
+											<p>Аптечка — базові засоби першої допомоги.</p>
+											<p>Вода та запас їжі — особливо якщо похід тривалий.</p>
+											<p>Ліхтарик — бажано налобний, щоб руки залишалися вільними.</p>
+											<p>Навігація — карта, компас або телефон із завантаженими офлайн-картами</p>
+										</div>
+										<button hidden data-fls-showmore-button="" type="button" class="useful__item-more-btn">
+											<span class="--icon-arrow">Читати далі</span>
+											<span>Сховати</span>
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="useful__item">
+								<div class="useful__item-image">
+									<div class="useful__item-label">
+										<a href="" class="btn--green">рибалка</a>
+									</div>
+									<div class="useful__item-img __img">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/use3-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/use3-1200.webp" type="image/webp">
+											<img alt="Image" src="./assets/img/use3.webp">
+										</picture>
+									</div>
+								</div>
+								<div class="useful__item-text">
+									<div class="useful__item-date">30.08.2026</div>
+									<div class="useful__item-title">Календар рибалки на осінь 2026</div>
+									<div data-fls-showmore="" class="useful__item-more">
+										<div data-fls-showmore-content="0" class="useful__item-more">
+											<p>
+												Вересень 2026 року вважається активним періодом осінньої риболовлі, особливо
+                                    перспективними називають 13–18 та 28–29 вересня, але календар варто використовувати
+                                    лише як орієнтир — погода й конкретна водойма часто важливіші.
+											</p>
+										</div>
+										<button hidden data-fls-showmore-button="" type="button" class="useful__item-more-btn">
+											<span class="--icon-arrow">Читати далі</span>
+											<span>Сховати</span>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="insta">
+					<div class="insta__container">
+						<div class="insta__top">
+							<h2 class="insta__top-title">
+								<span>Наші пригоди в інстаграм</span>
+								<a href="#">fishandtrip__ua</a>
+							</h2>
+							<a href="#" class="category__top-link">
+								<span>Дивитися всі фото</span>
+								<span class="--icon-arrow"></span>
+							</a>
+						</div>
+						<div class="insta__images">
+							<div class="insta__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/insta1-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/insta1-1200.webp" type="image/webp">
+									<img alt="Image" loading="lazy" src="./assets/img/insta1.webp">
+								</picture>
+							</div>
+							<div class="insta__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/insta2-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/insta2-1200.webp" type="image/webp">
+									<img alt="Image" loading="lazy" src="./assets/img/insta2.webp">
+								</picture>
+							</div>
+							<div class="insta__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/insta3-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/insta3-1200.webp" type="image/webp">
+									<img alt="Image" loading="lazy" src="./assets/img/insta3.webp">
+								</picture>
+							</div>
+							<div class="insta__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/insta4-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/insta4-1200.webp" type="image/webp">
+									<img alt="Image" loading="lazy" src="./assets/img/insta4.webp">
+								</picture>
+							</div>
+							<div class="insta__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/insta5-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/insta5-1200.webp" type="image/webp">
+									<img alt="Image" loading="lazy" src="./assets/img/insta5.webp">
+								</picture>
+							</div>
+							<div class="insta__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/insta6-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/insta6-1200.webp" type="image/webp">
+									<img alt="Image" loading="lazy" src="./assets/img/insta6.webp">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="say">
+					<div class="say__container">
+						<h2 class="say__title">Що кажуть наші клієнти</h2>
+						<div class="say__slider">
+							<div data-fls-slider="" class="say__cards swiper">
+								<div class="say__wrapper swiper-wrapper">
+									<div class="say__card swiper-slide">
+										<div class="say__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/man1-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/man1-1200.webp" type="image/webp">
+												<img alt="Image" src="./assets/img/man1.webp">
+											</picture>
+										</div>
+										<div class="say__card-text">
+											<div class="say__card-top">
+												<div class="say__card-title">Ігор, Київ</div>
+												<div class="say__card-raiting">
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+												</div>
+											</div>
+											<div data-fls-showmore="" class="say__card-caption">
+												<div data-fls-showmore-content="40" class="say__card-caption-body">
+													<p>
+														Замовляв спінінг та кілька приманок для осінньої риболовлі. Дуже сподобалося
+                                            обслуговування — швидко проконсультували, допомогли підібрати потрібні
+                                            товари та
+                                            оперативно відправили замовлення. Все прийшло добре запаковане й повністю
+                                            відповідає опису. Обов’язково звертатимусь ще!
+													</p>
+												</div>
+												<button hidden data-fls-showmore-button="" type="button" class="say__card-caption-btn">
+													<span>читати
+                                            далі</span>
+													<span>cховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="say__card swiper-slide">
+										<div class="say__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/man2-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/man2-1200.webp" type="image/webp">
+												<img alt="Image" src="./assets/img/man2.webp">
+											</picture>
+										</div>
+										<div class="say__card-text">
+											<div class="say__card-top">
+												<div class="say__card-title">Олександр, Львів</div>
+												<div class="say__card-raiting">
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+												</div>
+											</div>
+											<div data-fls-showmore="" class="say__card-caption">
+												<div data-fls-showmore-content="40" class="say__card-caption-body">
+													<p>
+														Замовляв у магазині спінінг, котушку та кілька приманок для осінньої
+                                            риболовлі.
+                                            Окремо сподобалося, що менеджер не просто запропонував найдорожчий варіант,
+                                            а
+                                            допоміг підібрати спорядження під мій бюджет і умови риболовлі. Замовлення
+                                            швидко відправили, все було добре запаковано. Залишився задоволений, буду
+                                            замовляти ще.
+													</p>
+												</div>
+												<button hidden data-fls-showmore-button="" type="button" class="say__card-caption-btn">
+													<span>читати
+                                            далі</span>
+													<span>cховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="say__card swiper-slide">
+										<div class="say__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/man3-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/man3-1200.webp" type="image/webp">
+												<img alt="Image" src="./assets/img/man3.webp">
+											</picture>
+										</div>
+										<div class="say__card-text">
+											<div class="say__card-top">
+												<div class="say__card-title">Максим, Рівне</div>
+												<div class="say__card-raiting">
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+												</div>
+											</div>
+											<div data-fls-showmore="" class="say__card-caption">
+												<div data-fls-showmore-content="40" class="say__card-caption-body">
+													<p>
+														Готувався до походу в Карпати й замовляв тут туристичний рюкзак, пальник та
+                                            кілька дрібниць для спорядження. На сайті легко знайшов потрібні товари, а
+                                            перед
+                                            покупкою отримав хорошу консультацію. Все приїхало вчасно та без пошкоджень.
+                                            Приємно мати справу з магазином, де дійсно розуміються на туризмі.
+													</p>
+												</div>
+												<button hidden data-fls-showmore-button="" type="button" class="say__card-caption-btn">
+													<span>читати
+                                            далі</span>
+													<span>cховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="say__card swiper-slide">
+										<div class="say__card-img __img"></div>
+										<div class="say__card-text">
+											<div class="say__card-top">
+												<div class="say__card-title">Ірина, Полтава</div>
+												<div class="say__card-raiting">
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+												</div>
+											</div>
+											<div data-fls-showmore="" class="say__card-caption">
+												<div data-fls-showmore-content="40" class="say__card-caption-body">
+													<p>
+														Купувала подарунок для чоловіка, який захоплюється риболовлею. Зовсім не
+                                            розбиралася у спорядженні, тому звернулася за допомогою до менеджера. Мені
+                                            доступно пояснили, що краще вибрати, і допомогли зібрати хороший комплект.
+                                            Чоловік залишився дуже задоволений подарунком. Дякую за уважне ставлення!
+													</p>
+												</div>
+												<button hidden data-fls-showmore-button="" type="button" class="say__card-caption-btn">
+													<span>читати
+                                            далі</span>
+													<span>cховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="say__card swiper-slide">
+										<div class="say__card-img __img">
+											<picture>
+												<source media="(max-width: 600px)" srcset="./assets/img/man5-600.webp" type="image/webp">
+												<source media="(max-width: 1200px)" srcset="./assets/img/man5-1200.webp" type="image/webp">
+												<img alt="Image" src="./assets/img/man5.webp">
+											</picture>
+										</div>
+										<div class="say__card-text">
+											<div class="say__card-top">
+												<div class="say__card-title">Максим, Житомир</div>
+												<div class="say__card-raiting">
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+													<span class="--icon-star"></span>
+												</div>
+											</div>
+											<div data-fls-showmore="" class="say__card-caption">
+												<div data-fls-showmore-content="40" class="say__card-caption-body">
+													<p>
+														Не перший раз замовляю тут товари для риболовлі та виїздів на природу.
+                                            Подобається хороший вибір — від приманок і снастей до туристичного
+                                            спорядження.
+                                            Замовлення завжди приходять вчасно, упаковка надійна, а ціни цілком
+                                            адекватні.
+                                            Хороший магазин для тих, хто любить проводити час на природі.
+													</p>
+												</div>
+												<button hidden data-fls-showmore-button="" type="button" class="say__card-caption-btn">
+													<span>читати
+                                            далі</span>
+													<span>cховати</span>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="heets__slider-arrow heets__slider-arrow-prev say__prev">
+								<span class="--icon-prev"></span>
+							</div>
+							<div class="heets__slider-arrow heets__slider-arrow-next say__next">
+								<span class="--icon-next"></span>
+							</div>
+							<div class="say__slider-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section class="ready">
+					<div class="ready__bg __img">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/bg-reka1-600.webp" type="image/webp">
+							<source media="(max-width: 1200px)" srcset="./assets/img/bg-reka1-1200.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/bg-reka1.webp">
+						</picture>
+					</div>
+					<div class="ready__container">
+						<div class="ready__text">
+							<h2 class="ready__title">Готовий до нових вражень?</h2>
+							<h3 class="ready__subtitle">Ми маємо все що тобі потрібно!</h3>
+							<div class="ready__buttons">
+								<a href="#" class="ready__link btn--green">Перейти в каталог</a>
+							</div>
+						</div>
+						<div class="ready__items">
+							<div class="ready__item">
+								<div class="ready__item-ico">
+									<span class="--icon-fishing"></span>
+								</div>
+								<div class="ready__item-title">Великий асортимент</div>
+							</div>
+							<div class="ready__item">
+								<div class="ready__item-ico">
+									<span class="--icon-prize"></span>
+								</div>
+								<div class="ready__item-title">Якісні бренди</div>
+							</div>
+							<div class="ready__item">
+								<div class="ready__item-ico">
+									<span class="--icon-truck"></span>
+								</div>
+								<div class="ready__item-title">Доставка 1-2 дні</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer id="contacts" class="footer" data-fls-footer="">
+				<div class="footer__container">
+					<div class="footer__items">
+						<div class="footer__text">
+							<div class="footer__text-title">Підпишіться на новини та акції</div>
+							<div class="footer__text-caption">Отримуйте знижки першими!</div>
+							<form action="#" class="footer__text-form">
+								<input type="text" placeholder="Ваш e-mail" class="footer__text-input">
+								<button class="footer__text-button">підписатися</button>
+							</form>
+							<div class="footer__text-icons">
+								<a href="#" class="footer__text-ico --icon-facebook"></a>
+								<a href="#" class="footer__text-ico --icon-insta"></a>
+								<a href="#" class="footer__text-ico --icon-youtube"></a>
+								<a href="#" class="footer__text-ico --icon-telegram"></a>
+							</div>
+						</div>
+						<div data-fls-spollers="890,max" class="footer__navigation">
+							<details class="footer__navigation-item">
+								<summary class="footer__navigation-title">Каталог</summary>
+								<ul class="footer__navigation-list">
+									<li>
+										<a href="#" class="footer__navigation-link">Риболовля</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Туризм</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Одяг та взуття</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Аксесуари</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Акції</a>
+									</li>
+								</ul>
+							</details>
+							<details class="footer__navigation-item">
+								<summary class="footer__navigation-title">Покупцям</summary>
+								<ul class="footer__navigation-list">
+									<li>
+										<a href="#" class="footer__navigation-link">Доставка і оплата</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Гарантії та повернення</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">обмін та повернення</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Питання і відповіді</a>
+									</li>
+								</ul>
+							</details>
+							<details class="footer__navigation-item">
+								<summary class="footer__navigation-title">Контакти</summary>
+								<ul class="footer__navigation-list">
+									<li>
+										<a href="tel:+390671234567" class="footer__navigation-link">
+											<span class="--icon-phone"></span>
+											<span>+38 (093) 876 54 32</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">Щодня з 8:00 до 20:00</a>
+									</li>
+									<li>
+										<a href="#" class="footer__navigation-link">М. Київ</a>
+									</li>
+								</ul>
+							</details>
+						</div>
+					</div>
+					<div class="footer__copyright">
+						<span>2026 Fish & Trip</span>
+						<span class="--icon-fish"></span>
+						<span>
+							in
+                Kiev.
+                Всі права захищено
+                2026
+						</span>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
