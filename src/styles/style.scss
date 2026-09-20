@@ -1,0 +1,146 @@
+@use "sass:math"; // Підключення бібліотек
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Підключення загальних віддалених шрифтів (Google Fonts)
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Стилі тега BODY
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+body {
+	min-width: #{$minWidth}px;
+	color: $mainColor;
+	font-family: $fontFamily;
+	font-size: #{$fontSize}px;
+	// Скролл заблоковано
+	[data-fls-scrolllock] & {
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+	// Сайт завантажений
+	[data-fls-loaded] & {
+	}
+}
+body:has(.wrapper--active) {
+  overflow: hidden;
+}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Оболонка WRAPPER
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+.wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow: clip;
+	// Притискаємо footer
+	> main {
+		flex: 1 1 auto;
+	}
+	// Фікс для слайдерів
+	> * {
+		min-width: 0;
+	}
+}
+[class*="__img"] img{
+   object-fit: cover;
+object-position: center;
+width: 100%;
+min-height: 100%;
+}
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Обмежуючий контейнер
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Стилі будуть застосовуватись до
+// всіх класів, що містять *__container
+// Наприклад header__container, main__container і т.п.
+// Сніппет (HTML): cnt
+
+@if ($responsiveType==1) {
+	// Чуйна
+	[class*="__container"] {
+		@if ($maxWidthContainer>0) {
+			max-width: #{$containerWidth}px;
+			margin: 0 auto;
+		}
+		@if ($containerPadding>0) {
+			@if ($maxWidthContainer>0) {
+				padding-left: #{math.div($containerPadding, 2)}px;
+				padding-right: #{math.div($containerPadding, 2)}px;
+			} @else {
+				@include adaptiveValue("padding-left", math.div($containerPadding, 2), 15);
+				@include adaptiveValue("padding-right", math.div($containerPadding, 2), 15);
+			}
+		}
+	}
+} @else {
+	// Брейк-поїнтами
+	[class*="__container"] {
+		margin: 0 auto;
+		@if ($maxWidthContainer>0) {
+			max-width: #{$containerWidth}px;
+		} @else {
+			@if ($containerPadding>0) {
+				padding-left: #{math.div($containerPadding, 2)}px;
+				padding-right: #{math.div($containerPadding, 2)}px;
+			}
+		}
+		@media (max-width: toEm($pc)) {
+			max-width: 970px;
+		}
+		@media (max-width: toEm($tablet)) {
+			max-width: 750px;
+		}
+		@media (max-width: toEm($mobile)) {
+			max-width: none;
+			@if ($containerPadding>0 and $maxWidthContainer>0) {
+				padding-left: #{math.div($containerPadding, 2)}px;
+				padding-right: #{math.div($containerPadding, 2)}px;
+			}
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+// Загальні стилі для усього сайту
+// ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+.show{
+	transition: .7s;
+	opacity: 0;
+	transform: translate(50px,50px);
+}
+.show.visible{
+	opacity: 1;
+	transform: translate(0, 0);
+}
+.btn--yellow {
+           text-transform: uppercase;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 25px;
+            background: $colorOrange;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+			transition: .3s;
+			   @media(min-width:1024px){
+            &:hover{
+            background: #097801c3;
+              }
+                  }
+}
+.btn--green{
+	 height: 44px;
+     padding-inline: 20px;
+     background: #097801c3;
+      transition: .3s;
+       @media(min-width:1024px){
+            &:hover{
+            background: $colorOrange;
+              }
+                  }
+}

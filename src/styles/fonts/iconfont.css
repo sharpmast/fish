@@ -1,0 +1,89 @@
+@font-face { 
+	font-family: "iconfont"; 
+	font-display: swap;
+	src: url("C:/Users/2020/Desktop/vite/src/assets/svgicons/preview/iconfont.woff2?0b9ec6a481ea7b1dc98fac79eafe8562") format("woff2"); 
+} 
+[class*="--icon-"]::before{
+	font-family: iconfont; 
+}
+	[class*="--icon-arrow"]::before { 
+		content: "\f101"; 
+	} 
+	[class*="--icon-back"]::before { 
+		content: "\f102"; 
+	} 
+	[class*="--icon-best-change"]::before { 
+		content: "\f103"; 
+	} 
+	[class*="--icon-best-price"]::before { 
+		content: "\f104"; 
+	} 
+	[class*="--icon-cart"]::before { 
+		content: "\f105"; 
+	} 
+	[class*="--icon-change"]::before { 
+		content: "\f106"; 
+	} 
+	[class*="--icon-check"]::before { 
+		content: "\f107"; 
+	} 
+	[class*="--icon-clock"]::before { 
+		content: "\f108"; 
+	} 
+	[class*="--icon-consultation"]::before { 
+		content: "\f109"; 
+	} 
+	[class*="--icon-delivery"]::before { 
+		content: "\f10a"; 
+	} 
+	[class*="--icon-facebook"]::before { 
+		content: "\f10b"; 
+	} 
+	[class*="--icon-fish"]::before { 
+		content: "\f10c"; 
+	} 
+	[class*="--icon-fishing"]::before { 
+		content: "\f10d"; 
+	} 
+	[class*="--icon-heart"]::before { 
+		content: "\f10e"; 
+	} 
+	[class*="--icon-insta"]::before { 
+		content: "\f10f"; 
+	} 
+	[class*="--icon-next"]::before { 
+		content: "\f110"; 
+	} 
+	[class*="--icon-phone"]::before { 
+		content: "\f111"; 
+	} 
+	[class*="--icon-prev"]::before { 
+		content: "\f112"; 
+	} 
+	[class*="--icon-prize"]::before { 
+		content: "\f113"; 
+	} 
+	[class*="--icon-quality"]::before { 
+		content: "\f114"; 
+	} 
+	[class*="--icon-shield"]::before { 
+		content: "\f115"; 
+	} 
+	[class*="--icon-shoe"]::before { 
+		content: "\f116"; 
+	} 
+	[class*="--icon-star"]::before { 
+		content: "\f117"; 
+	} 
+	[class*="--icon-telegram"]::before { 
+		content: "\f118"; 
+	} 
+	[class*="--icon-truck"]::before { 
+		content: "\f119"; 
+	} 
+	[class*="--icon-user"]::before { 
+		content: "\f11a"; 
+	} 
+	[class*="--icon-youtube"]::before { 
+		content: "\f11b"; 
+	} 

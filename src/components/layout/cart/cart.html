@@ -1,0 +1,60 @@
+<div class="cart">
+    <div class="cart__overlay cart-action"></div>
+    <div class="cart__body">
+        <div class="cart__top">
+            <div class="cart__title">Кошик</div>
+            <button class="cart__btn cart-action"></button>
+        </div>
+        <div class="cart__items">
+            <span class="cart__void">Корзина порожня</span>
+            <template id="cart-item-template">
+                <div class="cart__item">
+                    <div class="cart__item-img __img">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="cart__item-text">
+                        <div class="cart__item-title"></div>
+
+                        <div class="cart__item-price">
+                            <span data-fls-cart-price></span>
+                            <span>грн.</span>
+                        </div>
+                    </div>
+
+                    <div class="cart__item-buttons">
+                        <div data-fls-quantity class="cart__quantity">
+
+                            <button data-fls-quantity-minus type="button" class="cart__quantity-btn">
+                            </button>
+
+                            <div class="cart__quantity-input">
+                                <input data-fls-addtocart-quantity data-fls-quantity-value autocomplete="off"
+                                    type="text" name="form[]" value="1">
+                            </div>
+
+                            <button data-fls-quantity-plus type="button"
+                                class="cart__quantity-btn cart__quantity-btn--plus">
+                            </button>
+
+                        </div>
+
+                        <button type="button" class="cart__remove">
+                            ×
+                        </button>
+                    </div>
+                </div>
+            </template>
+        </div>
+        <div class="cart__footer">
+            <div class="cart__total">
+                <span>Разом</span>
+                <span data-fls-cart-total>0</span>
+                <span>грн.</span>
+            </div>
+            <div class="cart__button">
+                <button class="cart__action-btn btn--yellow">Оформити замовлення</button>
+            </div>
+        </div>
+    </div>
+</div>

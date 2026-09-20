@@ -4509,6 +4509,7 @@ document.addEventListener("click", (e) => {
 			quantityInput.value = +quantityInput.value + 1;
 			const priceElement = existingItem.querySelector("[data-fls-cart-price]");
 			priceElement.textContent = Number(priceElement.dataset.price) * Number(quantityInput.value);
+			updateCart();
 		} else addProductCart(product);
 		addToCart(addButton);
 		return;
